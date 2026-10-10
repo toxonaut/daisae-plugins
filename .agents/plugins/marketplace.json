@@ -1,0 +1,20 @@
+{
+  "name": "daisae-github",
+  "interface": {
+    "displayName": "DAISAE"
+  },
+  "plugins": [
+    {
+      "name": "daisae-pv-demo",
+      "source": {
+        "source": "local",
+        "path": "./packages/daisae-pv-demo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

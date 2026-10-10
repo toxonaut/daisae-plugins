@@ -1,0 +1,24 @@
+{
+  "interface": {
+    "displayName": "DAISAE",
+    "shortDescription": "Research tasks and PV tables",
+    "longDescription": "Create one stored simulated PV dataset for a drug, view it inline, and move it to the side panel and back. Dataset explorer opens from More tools to browse, search, delete and restore stored tables. Both viewers use a blue-and-white theme. Includes the DAISAE MCP server connection. All records are simulated. Environment variables opens locally from main navigation or More tools to edit the displayed project folder’s .env file, with masked values, encrypted saves, automatic macOS Keychain or Windows Credential Manager key storage, and a Python launcher that decrypts values locally. DAISAE Workbench opens from main navigation with a stylized daisy icon and six starter cards for LSMV queries, literature searches, literature analysis, knowledge bases, Forkscope, and MedDRA mapping. Cards send guided prompts using the host message API; integrations are used when available. Includes explicit Python environment installation/status/uninstallation tools. Shared main defaults to system Python and listed research packages; named environments support additional Python versions. Environments persist outside the plugin across reinstalls. The Python launcher injects the current project’s encrypted variables. Forkscope can be installed from a verified repository into a compatible environment. Remote Python runs in isolated sessions on Railway, with persistent variables until kernel reset and saved results for seven days. Storage helpers register project-linked datasets as simulated Snowflake tables and output files as simulated S3 objects, with downloadable results and a Python results explorer. Dataset explorer lists both PV and registered remote Python tables under their originating projects, with common paging, search and recoverable deletion.",
+    "developerName": "DAISAE",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": "Open Dataset explorer",
+    "logo": "./assets/daisy.svg",
+    "composerIcon": "./assets/daisy.svg"
+  },
+  "name": "daisae-pv-demo",
+  "version": "2.21.1",
+  "description": "Research tasks, drug embeddings, simulated PV tables, encrypted project variables, and persistent shared Python environments. PV tables retain their originating project; Dataset explorer filters by project or No project. Remote Python sessions, project-linked datasets and downloadable artifacts on Railway. Unified project-linked simulated Snowflake catalog for PV and Python datasets. Artifact explorer with project downloads. Project downloads through the local MCP tool with chat confirmation.",
+  "author": {
+    "name": "DAISAE"
+  },
+  "keywords": [],
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json"
+}

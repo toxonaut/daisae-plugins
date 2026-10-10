@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "daisae": {
+      "type": "streamable-http",
+      "url": "https://pv-mcp-production.up.railway.app/mcp"
+    },
+    "environment": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/local-env/server.mjs"
+      ],
+      "type": "stdio",
+      "cwd": "./",
+      "env": {
+        "DAISAE_LOCAL_PANEL": "environment"
+      }
+    },
+    "workspace": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/workspace/server.mjs"
+      ],
+      "cwd": "./",
+      "type": "stdio"
+    },
+    "python": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/local-env/server.mjs"
+      ],
+      "type": "stdio",
+      "cwd": "./",
+      "env": {
+        "DAISAE_LOCAL_PANEL": "python"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "daisae": {
+      "url": "https://pv-mcp-production.up.railway.app/mcp"
+    },
+    "environment": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/local-env/server.mjs"
+      ],
+      "cwd": "./"
+    },
+    "workspace": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/workspace/server.mjs"
+      ],
+      "cwd": "./"
+    }
+  }
+}

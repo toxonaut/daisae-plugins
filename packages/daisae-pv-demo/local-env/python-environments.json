@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "defaultEnvironment": "main",
+  "uvVersion": "0.8.22",
+  "defaultPackages": [
+    "numpy==2.2.6",
+    "pandas==2.2.3",
+    "scipy==1.15.3",
+    "scikit-learn==1.6.1",
+    "matplotlib==3.10.1",
+    "requests==2.32.4",
+    "python-dotenv==1.1.1"
+  ],
+  "frameworks": {
+    "forkscope": {
+      "source": "git+https://github.com/alonso130r/forkscope.git@a8b91e3769d5554c10b9a067540d67cdf8834cd7",
+      "description": "ForkScope world-model rollout analyzer. Python >=3.10.",
+      "repository": "https://github.com/alonso130r/forkscope",
+      "pythonRequirement": ">=3.10"
+    }
+  }
+}
