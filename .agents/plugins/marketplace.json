@@ -1,7 +1,7 @@
 {
   "name": "daisae-github",
   "interface": {
-    "displayName": "DAISAE"
+    "displayName": "DAISAE Production"
   },
   "plugins": [
     {
