@@ -3,7 +3,21 @@
   "mcpServers": {
     "daisae": {
       "type": "streamable-http",
-      "url": "https://pv-mcp-production.up.railway.app/mcp"
+      "url": "https://pv-mcp-production.up.railway.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "authorizationUrl": "https://pv-mcp-production.up.railway.app/oauth/authorize",
+            "tokenUrl": "https://pv-mcp-production.up.railway.app/oauth/token",
+            "registrationUrl": "https://pv-mcp-production.up.railway.app/oauth/register",
+            "baseScopes": ["pv:access"]
+          }
+        }
+      }
     },
     "environment": {
       "command": "node",
